@@ -42,7 +42,7 @@ plot(X(:, 2), X * theta);
 
 ### Logistic Regression 예제
 
-```
+```octave
 % 데이터 로드
 data = load('logistic_regression_data.txt');
 X = data(:, 1:2);
