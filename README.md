@@ -38,9 +38,11 @@ theta = pinv(X' * X) * X' * y;
 plot(X(:, 2), y, 'o');
 hold on;
 plot(X(:, 2), X * theta);
+```
 
 ### Logistic Regression 예제
 
+```
 % 데이터 로드
 data = load('logistic_regression_data.txt');
 X = data(:, 1:2);
@@ -56,3 +58,4 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 % 결과 시각화
 plotData(X(:, 2:3), y);
 plotDecisionBoundary(theta, X, y);
+```
